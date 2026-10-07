@@ -30,6 +30,7 @@ why, and what you can do about it. Questions: <a href="mailto:boonamazon@gmail.c
   <li><strong>Your archive (if you use it):</strong> captures you choose to keep in your private Archive, and, if you turn it on, copies of the captures you post to Watch, Reports or Stories, each with the time it was taken. Only you can see your archive. It stays after a post is deleted or a Story ends, until you delete the item or your account. Moments are never kept there.</li>
   <li><strong>Location (optional):</strong> only if you allow location access and choose to tag a post or story. See <a href="#location">Location</a> below.</li>
   <li><strong>What Watch showed you:</strong> when you use Watch, discover Stories or open a Scene, we keep a record of which posts and Stories we showed you and in what order, so you don't see the same ones again and so we can check how recommendations work. See <a href="#usage">Usage data</a> below.</li>
+  <li><strong>Views, for Impact:</strong> when someone else's post, report, Story or profile is open on your screen for 2 seconds or more, the app tells our servers so its author can see how far it travelled. We add it to that post's totals and never store who viewed it. See <a href="#views">Views and Impact</a> below.</li>
   <li><strong>Usage data (optional):</strong> only if you turn on "Share usage data" in Settings. See <a href="#usage">Usage data</a> below.</li>
   <li><strong>Notifications:</strong> if you allow notifications, your device's push token and platform (iOS or Android).</li>
   <li><strong>Safety records:</strong> people you block or mute, reports you file, and decisions our team makes about your account or what you posted, with their reasons and any appeal. See <a href="#decisions">Reports and our team's decisions</a>.</li>
@@ -116,13 +117,42 @@ uploaded unless you post, send or archive it.</p>
   <li>Neither includes your location, and neither is shared with anyone else.</li>
 </ul>
 
+<h2 id="views">Views and Impact</h2>
+<ul>
+  <li><strong>What's counted:</strong> when someone else's post, report, Story or profile is on your
+  screen for at least 2 seconds, or plays for 2 seconds, the app sends which one it was, where in
+  the app you found it (for example the Map or Watch), how long it was on screen, and whether a
+  video played to the end. We also note whether you follow its author. The app also counts when you
+  share a post outside ULOOM, open a report's source, or follow someone from their post. Views of
+  your own posts aren't counted.</li>
+  <li><strong>Never who:</strong> each view is added to totals for that post and its author, by day
+  and by hour. We don't store who viewed anything. To count each person once a day, we keep a code
+  made from your account and the post with a key that changes every day; the key and the codes are
+  deleted when the day ends (UTC), and after that they can't be traced to anyone. To count how many
+  different people a post reached, we keep a statistical summary (a HyperLogLog sketch) that can
+  estimate a number of people but can't list them.</li>
+  <li><strong>Who sees the numbers:</strong> only the author, in Impact, and our support team when
+  the author asks for help (every look is recorded). Breakdowns, such as where people found a post,
+  followers or new people, and when people watch, appear only when at least 10 people are in them,
+  so they can't single anyone out. Impact never shows age, gender or location; ULOOM doesn't
+  collect them. The list of who viewed your Story, which ULOOM already shows you, stays as it is.</li>
+  <li><strong>Likes, comments, reposts, saves, sends and follows</strong> on your posts and Stories
+  are also added up by day for Impact, from what ULOOM already records.</li>
+  <li><strong>How long:</strong> daily totals are kept for 13 months. Deleting a post deletes its
+  totals, and deleting your account deletes the totals for your posts, Stories and profile. Views
+  you added to other people's posts stay in their totals, since nothing there links them to you.</li>
+  <li>This counting is part of how ULOOM works, so it runs for everyone. It isn't the optional
+  "Share usage data", which stays separate, and it never includes your location.</li>
+</ul>
+
 <h2>What we don't do</h2>
 <p>No advertising, no selling or renting your data, and no third-party analytics or tracking
 tools in the app. Usage data, if you share it, stays with ULOOM.</p>
 
 <h2>How we use it</h2>
 <p>To run ULOOM: showing your profile and posts, choosing what Watch shows you, delivering
-messages and Snaps, sending the notifications you've turned on, and keeping people safe
+messages and Snaps, sending the notifications you've turned on, showing authors how far their posts
+and Stories travelled (Impact), and keeping people safe
 through blocks, reports and our team's review, and protecting accounts with sign-in records. If
 you share usage data, also to improve the app.</p>
 
@@ -163,8 +193,8 @@ Account status), and you can ask us to look again.</p>
 <p>You can delete your own posts, stories, comments, archive items and messages at any time, and
 delete a chat or a message for yourself only. Deleting a post or story also deletes its photo and
 video files, unless the same file is still used somewhere else, such as your archive. Deleting
-your account in Settings removes your account, profile, content, archive, usage data and Watch
-records from our database, and the photo and video files you uploaded. If you signed in with
+your account in Settings removes your account, profile, content, archive, usage data, Watch
+records and Impact totals from our database, and the photo and video files you uploaded. If you signed in with
 Apple, we also ask Apple to remove ULOOM from your Apple ID. Files uploaded with
 earlier beta versions and left after a deletion can be removed on request: email us. A record of
 reports and of our team's actions, including the username involved, may be kept after an account is
