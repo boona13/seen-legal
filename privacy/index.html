@@ -31,6 +31,7 @@ why, and what you can do about it. Questions: <a href="mailto:boonamazon@gmail.c
   <li><strong>Your archive (if you use it):</strong> captures you choose to keep in your private Archive, and, if you turn it on, copies of the captures you post to Watch, Reports or Stories, each with the time it was taken. Only you can see your archive. It stays after a post is deleted or a Story ends, until you delete the item or your account. Moments are never kept there.</li>
   <li><strong>Location (optional):</strong> only if you allow location access and choose to tag a post or story. See <a href="#location">Location</a> below.</li>
   <li><strong>What Watch showed you:</strong> when you use Watch, discover Stories or open a Scene, we keep a record of which posts and Stories we showed you and in what order, so you don't see the same ones again and so we can check how recommendations work. See <a href="#usage">Usage data</a> below.</li>
+  <li><strong>What For You learns:</strong> which creators and topics you seem to like, from what you like, save, comment on and repost, and from "Not interested" and "Show less". If you're an adult with Personalised For You on, also from finishing a video, watching for 10 seconds or more, or skipping in under 2 seconds. We keep the interests, not a list of what you watched. You can turn it off or reset it. See <a href="#recommendations">How For You is chosen</a> below.</li>
   <li><strong>Views, for Impact:</strong> when someone else's post, report, Story or profile is open on your screen for 2 seconds or more, the app tells our servers so its author can see how far it travelled, with the country your phone is set to. We add it to that post's totals and never store who viewed it. See <a href="#views">Views and Impact</a> below.</li>
   <li><strong>Days you use ULOOM:</strong> on each day you open ULOOM, the app tells our servers, with your phone type, the app version and the country your phone is set to. We keep the day under a code instead of your account, to count how many people use ULOOM and how many come back. You can turn it off. See <a href="#counting">Counting how many people use ULOOM</a> below.</li>
   <li><strong>Usage data (optional):</strong> only if you turn on "Share usage data" in Settings. See <a href="#usage">Usage data</a> below.</li>
@@ -153,7 +154,9 @@ uploaded unless you post, send or archive it.</p>
   made from your account and the post with a key that changes every day; the key and the codes are
   deleted when the day ends (UTC), and after that they can't be traced to anyone. To count how many
   different people a post reached, we keep a statistical summary (a HyperLogLog sketch) that can
-  estimate a number of people but can't list them.</li>
+  estimate a number of people but can't list them. If you're an adult with Personalised For You on, the same
+  view can also teach For You what you like (see <a href="#recommendations">How For You is chosen</a>); that keeps
+  no list of views either.</li>
   <li><strong>Who sees the numbers:</strong> only the author, in Impact, and our support team when
   the author asks for help (every look is recorded). Breakdowns, such as where people found a post,
   followers or new people, and when people watch, appear only when at least 10 people are in them,
@@ -184,6 +187,30 @@ uploaded unless you post, send or archive it.</p>
   <li><strong>How long:</strong> 13 months, and deleted with your account.</li>
   <li><strong>Turn it off:</strong> Settings → Privacy → Count my visits. Off deletes what was kept and
   stops it straight away.</li>
+</ul>
+
+<h2 id="recommendations">How For You is chosen</h2>
+<ul>
+  <li><strong>What it uses:</strong> how people engage with each post (as totals, never who), how new it is, who
+  and which topics you follow, and what For You has learned you like. Posts from the country your phone is set to
+  rank a little higher. Every post is checked against what you may see first: your blocks and mutes, "Not
+  interested", the rules for under-18s and our team's limits.</li>
+  <li><strong>What it learns:</strong> which creators and topics you seem to like, from what you like, save,
+  comment on and repost, and from "Not interested" and "Show less from @name". If you're an adult with
+  Personalised For You on, also from finishing a video, watching for 10 seconds or more, or skipping in under 2
+  seconds. It never learns from what anyone under 18 watches.</li>
+  <li><strong>What we keep:</strong> your interest in up to 200 creators and topics, each fading by half every 30
+  days. It isn't a history of what you watched: a view that teaches For You is added to your interests within
+  minutes and then deleted. Your interests are deleted when you turn Personalised For You off, reset For You, or
+  delete your account. We also count how many times each post was shown in Watch, as totals, never who.</li>
+  <li><strong>Your controls:</strong> in Settings → Recommendations you can turn Personalised For You off (For You
+  then uses only who and which topics you follow, not what it learned or your country), reset it, and see who
+  you've chosen to see less of. "Not interested" and "Show less" are in each post's menu.</li>
+  <li><strong>New posts and new people:</strong> a new post is shown to a small number of people first and reaches
+  more if they like it. A new person's first posts get a first audience of real people. We never add fake views,
+  likes or followers.</li>
+  <li><strong>Following:</strong> until you follow 10 people, Following adds posts you might like after your
+  friends' ones, marked "Suggested for you".</li>
 </ul>
 
 <h2>What we don't do</h2>
@@ -259,15 +286,15 @@ Account status), and you can ask us to look again.</p>
 delete a chat or a message for yourself only. Deleting a post or story also deletes its photo and
 video files, unless the same file is still used somewhere else, such as your archive. Deleting
 your account in Settings removes your account, profile, content, archive, usage data, Watch
-records, Impact totals, your birthday and the days you used ULOOM from our database, and the photo and video files you uploaded. If you signed in with
+records, what For You learned about you, Impact totals, your birthday and the days you used ULOOM from our database, and the photo and video files you uploaded. If you signed in with
 Apple, we also ask Apple to remove ULOOM from your Apple ID. Files uploaded with
 earlier beta versions and left after a deletion can be removed on request: email us. A record of
 reports and of our team's actions, including the username involved, may be kept after an account is
 deleted, for safety and legal reasons. Beta data may be wiped when the beta ends.</p>
 
 <h2>Your choices and rights</h2>
-<p>You can turn off location and notifications in your device settings, and "Count my visits" and
-"Share usage data" in ULOOM's Settings, at any time. To get a copy of your data, use <strong>Download your data</strong>
+<p>You can turn off location and notifications in your device settings, and "Count my visits",
+"Share usage data" and "Personalised For You" in ULOOM's Settings, at any time, and reset For You there. To get a copy of your data, use <strong>Download your data</strong>
 in Settings → Account: it saves one file with your account, profile, posts, Stories, archive,
 the messages you sent and your activity, with links to your photos, videos and voice notes. It
 doesn't include other people's messages to you. For a correction or deletion, or anything the
@@ -277,8 +304,8 @@ download doesn't cover, email <a href="mailto:boonamazon@gmail.com">boonamazon@g
 <p>ULOOM is for people 13 and older, and older where the law says so (16 in Australia). We ask for
 your birthday to check this and don't knowingly keep data of anyone younger. If you're 13 to 17, a new
 account starts private, your posts reach only your followers in recommendations (see
-<a href="#who">Who can see your content</a>), and your views are never part of anyone's age, country or time
-breakdowns.</p>
+<a href="#who">Who can see your content</a>), your views are never part of anyone's age, country or time
+breakdowns, and For You never learns from what you watch.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, we'll update the date above and tell beta testers in the app or by
